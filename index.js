@@ -40,7 +40,7 @@ client.on("ready", () => {
 
   const rp = new Discord.RichPresence(client)
     .setApplicationId(APPLICATION_ID)
-    .setType("Competing")
+    .setType("PLAYING")
     .setName("Học là chính")
     .setDetails("sớm thôi, một hành trình mới trong 5 tháng")
     .setStartTimestamp(Date.now())
@@ -56,7 +56,7 @@ client.on("ready", () => {
     .addButton(BUTTON_2_LABEL, BUTTON_2_URL);
 
   client.user.setPresence({
-    
+        status: 'idle',
     activities: [rp]
     
   });
