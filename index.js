@@ -57,7 +57,7 @@ client.on("ready", () => {
 
   client.user.setPresence({
     
-    activities: [rp]
+    activities: [rp],
     status: 'idle',
   });
 
